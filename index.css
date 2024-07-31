@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color-red: hsl(0, 78%, 62%);
+    --color-cyan: hsl(180, 62%, 55%);
+    --color-orange: hsl(34, 97%, 64%);
+    --color-blue: hsl(212, 86%, 64%);
+    --color-very-dark-blue: hsl(234, 12%, 34%);
+    --color-grayish-blue: hsl(229, 6%, 66%);
+    --color-very-light-gray: hsl(0, 0%, 98%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: var(--color-very-light-gray);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 55px;
+    width: 500px;
+    
+}
+
+header .subtitle{
+    font-size: 30px;
+    font-weight: 200;
+    
+}
+
+header .title{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--color-very-dark-blue);
+    margin-bottom: 15px;
+}
+
+header .paragraph{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-grayish-blue);
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    border: 1px;
+    gap: 40px;
+}
+
+.cards .column-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.cards .card{
+    height: 260px;
+    width: 340px;
+    padding: 25px 10px 10px 30px;
+    background-color: var(--color-very-light-gray);
+    border-radius: 5px;
+    border: none; 
+    box-shadow: 1px 20px 20px 1px var(--color-grayish-blue);
+}
+
+.cards .card .title{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-very-dark-blue);
+    margin-bottom: 10px;
+}
+
+.cards .card .subtitle{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-grayish-blue);
+    width: 250px;
+    margin-bottom: 40px;
+}
+
+.cards .card .img_container{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 16px 16px 25px;
+}
+
+.cards .card1{
+    border-top: 3px solid var(--color-cyan);
+}
+
+.cards .card2{
+    border-top: 3px solid var(--color-red);
+}
+
+.cards .card3{
+    border-top: 3px solid var(--color-orange);
+}
+
+.cards .card4{
+    border-top: 3px solid var(--color-blue);
+}
